@@ -1,0 +1,6 @@
+			  <para>批量编辑食谱时，与编辑食谱的频次正相关。除此以外，发生频率极低，低于新建食谱用例。</para>
+			  <para>取决于用例“新建食谱”或“修改<glossterm>食谱</glossterm>”的发生频率。一个“新建食谱”包含至少一个添加<glossterm>步骤</glossterm>，一个“修改<glossterm>食谱</glossterm>”用例可以不包含添加步骤用例。</para>
+			  <para>取决于用例“编辑食谱”或“添加<glossterm>步骤</glossterm>”的发生频率。一个“编辑食谱”用例可以不包含编辑<glossterm>步骤</glossterm>。一个“添加<glossterm>步骤</glossterm>”用例有且只有一个“编辑步骤”用例</para>
+			  <para>批量编辑食谱时，与编辑食谱的频次正相关。除此以外，发生频率低，低于添加步骤用例。</para>
+			  <listitem>批量编辑食谱时，与编辑食谱的频次正相关。除此以外，发生频率低，低于添加步骤用例。</listitem>
+\(<para[^<>]\{-}>.\{-}\)\@<=>\@<!食谱<\@!\(.\{-}<\/para>\)\@=

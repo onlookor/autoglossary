@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article version="5.1" xmlns="http://docbook.org/ns/docbook"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:m="http://www.w3.org/1998/Math/MathML"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:db="http://docbook.org/ns/docbook"
+	xml:id="coocipe_usecase"
+	lang="zh_cn">
+	<info>
+		<title>Coocipe用例</title>
+
+		<author>
+			<personname><surname>魏</surname><givenname>耿智</givenname></personname>
+			<affiliation>
+				<orgname>Ways</orgname>
+			</affiliation>
+		</author>
+
+		<!--pubdate></pubdate>
+
+    <releaseinfo></releaseinfo>
+
+    <revhistory>
+      <revision>
+	<revnumber><replaceable>&lt;修订号&gt;</replaceable></revnumber>
+
+	<date></date>
+
+	<author>
+	   &lt;修订人&gt; 
+	</author>
+
+	<revdescription>
+	   &lt;修订描述&gt; 
+	</revdescription>
+      </revision>
+    </revhistory-->
+  </info>
+
+  <section>
+	  <title>引言</title>
+	  <para>本文档描述了用户与系统之间的交互，收集了用户的行为需求</para>
+	  <!--section>
+      <title>目的</title>
+
+      <para><replaceable>[详述这个用例集合的意图。]</replaceable></para>
+    </section>
+
+    <section>
+      <title>范围</title>
+
+      <para><replaceable>[对这个用例集合的范围进行简要描述。它与什么项目或者哪些项目相关，以及受这个文档影响的任何其它事物。例如，“本文档属XXX公司所有，XXXX项目遵从本文档的指导”。]</replaceable></para>
+    </section-->
+
+    <section>
+	    <title>概述</title>
+	    <para>本文由三部分组成。本节所在的第一部分为“引言”，介绍本文的目的、范围和概述。第二部分“用例模型概览”和“用例”构成了本文的主体。第三部分定义了本文中使用的术语、同义词、缩写，列出了引用的参考文献。</para>
+    </section>
+  </section>
+
+  <section>
+	  <title>用例模型概览</title>
+	  <para><replaceable>[这一部分包含了用例模型或其子集的整体视图。它包括所有用例及其执行者的名称和简要描述，以及图和它们之间的相互关系。这一部分按照将模型组织成包的方式全面描述用例模型显示了模型的层次结构。</replaceable></para>
+	  <para><replaceable>关心系统行为的人们使用这一概述。这些人包括客户、用户、架构设计师、用例作者、设计人员、用例设计人员、测试人员、管理人员、评审人员以及书记人员。]</replaceable></para>
+
+	  <section>
+		  <title><replaceable>用例模型层次</replaceable></title>
+
+		  <para><replaceable>[这一部分介绍用例包的层次结构，解释彼此间的关系，描述每个包的内容。如果模型有多个包层次，先呈现顶层包，然后按层次依次往下，直至层次底部。]</replaceable></para>
+
+		  <section>
+			  <title><replaceable>&lt;顶层用例包名称&gt;</replaceable></title>
+
+			  <section>
+				  <title>图</title>
+
+				  <para><replaceable>[与该用例相关的图，特别是包结构图和用例图。这些图表现了包与包之间、用例与用例之间、执行者与用例之间的关系。]</replaceable></para>
+			  </section>
+
+			  <section>
+				  <title><replaceable>&lt;次级用例包名称&gt;</replaceable></title>
+
+				  <para><replaceable>[上一级用例包内的包或用例。结构与顶层用例包一样。]</replaceable></para>
+			  </section>
+		  </section>
+	  </section>
+  </section>
+
+  <section>
+	  <title>用例</title>
+
+	  <section>
+		  <title>启动Coocipe</title>
+		  <section>
+			  <title>简要描述</title>
+			  <para>该用例描述用户如何从移动终端启动应用。</para>
+		  </section>
+		  <section>
+			  <title>层次</title>
+			  <para>顶层</para>
+		  </section>
+		  <section>
+			  <title>发生频率</title>
+			  <para>最高每天3次</para>
+		  </section>
+		  <section>
+			  <title>执行者</title>
+			  <itemizedlist>
+				  <listitem><para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaNovice" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectNoviceWen" xrefstyle="select: title"/></para></listitem>
+				  <listitem><para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaGourmet" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectGourmetWu" xrefstyle="select: title"/></para></listitem>
+				  <listitem><para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaGrandma" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectGrandmaXiong" xrefstyle="select: title"/></para></listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>前置条件</title>
+			  <para>无</para>
+		  </section>
+		  <section>
+			  <title>后置条件</title>
+			  <section>
+				  <title>成功保证</title>
+				  <itemizedlist>
+					  <listitem></listitem>
+				  </itemizedlist>
+			  </section>
+			  <section>
+				  <title>最小保证</title>
+				  <itemizedlist>
+					  <listitem><para>执行者应能访问位于手持终端上的：</para>
+						  <itemizedlist>
+							  <listitem>食谱</listitem>
+							  <listitem>菜单</listitem>
+						  </itemizedlist>
+					  </listitem>
+				  </itemizedlist>
+			  </section>
+		  </section>
+		  <section>
+			  <title>触发事件</title>
+			  <para>执行者点选手持终端上的Coocipe快捷方式</para>
+		  </section>
+		  <section>
+			  <title>主成功场景</title>
+			  <para><replaceable></replaceable></para>
+			  <orderedlist>
+				  <listitem><para>执行者点选Coocipe快捷方式</para></listitem>
+				  <listitem><para>系统打开Coocipe，呈现执行者最常用的功能界面</para></listitem>
+			  </orderedlist>
+		  </section>
+		  <section>
+			  <title>扩展</title>
+			  <itemizedlist>
+				  <listitem>
+					  <para>2a:第一次使用，没有执行者最常用功能界面</para>
+					  <orderedlist>
+						  <listitem><para>系统执行初始运行向导</para></listitem>
+					  </orderedlist>
+				  </listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>特殊需求</title>
+			  <para>无</para>
+			  <section>
+				  <title>质量属性</title>
+				  <section>
+					  <title>性能</title>
+					  <!--para><replaceable>[系统及时提供服务的能力。包括：</replaceable></para>
+
+					  <itemizedlist>
+						  <listitem>
+							  <para><replaceable>事务响应时间——平均值，最大值</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>吞吐量——单位时间处理的事务数</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>容量——系统可容纳的客户总数或事务数</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>退化模式——当系统被降级时，可接受的运转模式</replaceable></para>
+						  </listitem>
+					  </itemizedlist>
+					  <para><replaceable>以及系统对资源的使用效率（CPU时间、内存占用、磁盘空间、通信带宽等等的百分比）。]</replaceable></para-->
+				  </section>
+
+				  <section>
+					  <title>安全性</title>
+					  <!--para></para-->
+			  </section>
+
+			  <section>
+				  <title>可靠性</title>
+				  <!--para><replaceable>[可靠性是系统在规定的条件下和规定的时间内，完成规定功能的能力。</replaceable></para>
+
+					  <para><replaceable>基本可靠性是系统在规定条件下无故障的持续时间或概率。若无特别指出，文档中提到的“可靠性”均指基本可靠性，以“平均失效前时间”（MTTF）度量。
+							  建议将软件系统视作可修复产品，因此可以不加区分地使用“平均失效前/故障时间”（MTTF）和“平均失效/故障间隔时间”（MTBF）,二者是等效的。</replaceable></para>
+
+					  <para><replaceable>需求必须仔细定义什么是“失效”或“故障”。 ]</replaceable></para-->
+				  </section>
+				  <section>
+					  <title>易用性（Usability）</title>
+					  <!--para><replaceable>[易用性衡量用户准备输入、操作和理解系统输出所付出的努力。“中间用户可以在3分钟内完成XXXX操作”，“文件菜单中的所有功能都必须定义快捷键”都是可用性的例子。建议：</replaceable></para>
+
+					  <itemizedlist>
+						  <listitem>
+							  <para><replaceable>指明为了使用户能够完成简单任务以及完成普通日常工作所需要的培训时间；</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>指明典型最终用户可能的典型任务或事务的可度量任务时间；</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>与用户已知的或正在使用的系统进行比较；</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>指明在线帮助、向导、工具说明、用户手册以及其它形式的文档和帮助的存在和所需的特征</replaceable>；</para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>遵循的人机界面开发的规章和标准]</replaceable></para>
+						  </listitem>
+					  </itemizedlist-->
+				  </section>
+				  <section>
+					  <title>有效性（Availability）</title>
+					  <!--para><replaceable>[有效性是系统在规定的条件下和规定时间内，处于可执行规定功能状态的能力，以“有效比例”（Percent
+							  Availability）表示。有效比例=平均失效前时间/(平均失效前时间+平均维修时间)。</replaceable></para>
+
+					  <para><replaceable>例：“工作日期间，当地时间早上6点到午夜，系统有效性至少达到99.5%，下午4点到6点，系统的有效性至少达到99.95%。”]</replaceable></para-->
+				  </section>
+				  <section>
+					  <title>可维护性</title>
+					  <!--para><replaceable>[可维护性是系统在规定条件下和规定的时间内，按规定的程序和方法进行维修时，保持或恢复规定状态的能力，以“平均维修时间”（MTTR）度量。需求必须指明“修复”是否意味着所有用户都可以再一次访问所有服务，或者是否完全恢复的子集是可接受的。</replaceable></para>
+					  <para><replaceable>例：“系统90%的故障要在5分钟内可修复，99.9%的系统故障要在1小时内修复。”]</replaceable></para-->
+				  </section>
+				  <section>
+					  <title>可伸缩性</title>
+					  <!--para><replaceable>[衡量系统“可通过扩展来增强处理能力”的能力。可通过度量扩展的上限和扩展的效率来衡量。]</replaceable></para-->
+			  </section>
+			  <section>
+				  <title>健壮性</title>
+				  <!--para><replaceable>[健壮性是指在用户进行了不被允许的操作、相连的软硬件系统发生故障等系统外部发生非正常情况时，系统仍能够提供服务的能力。</replaceable></para>
+					  <para><replaceable>健壮的软件可以从发生问题的环境中完好地恢复并且可容忍用户的错误。当从用户那里获取健壮性的目标时，询问系统可能遇到的错误条件并且要了解用户想让系统如何响应。</replaceable></para>
+					  <para><replaceable>例：“所有的参数都要指定一个默认值，当输入数据丢失或无效时，使用默认数据。”]</replaceable></para-->
+				  </section>
+				  <section>
+					  <title>互操作性</title>
+					  <!--para><replaceable>[互操作性表明系统与其它系统交换数据和服务的难易程度。为评估互操作性是否达到要求的程度，必须知道用户使用其它哪些系统与该系统相连接，以及彼此间交换哪些数据。例如：“系统应该能够从人力资源系统中导入员工基本信息。”]</replaceable></para-->
+			  </section>
+		  </section>
+		  <section>
+			  <title>约束</title>
+			  <section>
+				  <title>技术约束</title>
+				  <!--para><replaceable>[这一部分表达了对系统的设计或开发系统的过程的限制。包括环境约束（如“用Java编写软件”）、技术或数据变化（指完成相同目标的多种不同方法。例如，“用户可以用键盘输入数据，作为一种选择，他也可以通过条码扫描仪输入数据。”）、兼容性（如，“新的应用必须能够在新旧两种平台上都能运行”）等。]</replaceable></para-->
+		  </section>
+		  <section>
+			  <title>标准约束</title>
+			  <!--para><replaceable>[在这一部分列出系统必须遵循的技术标准和必须满足的行业标准。]</replaceable></para-->
+	  </section>
+	  <section>
+		  <title>法规约束</title>
+		  <!--para><replaceable>[在这一部分列出系统适用或必须遵守的法律、（行业）规章。]</replaceable></para-->
+  </section>
+			  </section>
+		  </section>
+	  </section>
+	  <section>
+		  <title>播放<glossterm>食谱</glossterm></title>
+		  <section>
+			  <title>简要描述</title>
+			  <para>该用例描述用户如何在做一道菜的过程中得到应用的辅助。</para>
+		  </section>
+		  <section>
+			  <title>层次</title>
+			  <para><replaceable>[这一部分包含一个用例列表，列表中的用例的场景中包含了这个用例]</replaceable></para>
+		  </section>
+		  <section>
+			  <title>发生频率</title>
+			  <para>最高每天3次</para>
+		  </section>
+		  <section>
+			  <title>执行者</title>
+			  <para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaNovice" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectNoviceWen" xrefstyle="select: title"/></para>
+		  </section>
+		  <section>
+			  <title>前置条件</title>
+			  <para>系统已打开需播放的<glossterm>食谱</glossterm></para>
+		  </section>
+		  <section>
+			  <title>后置条件</title>
+			  <section>
+				  <title>成功保证</title>
+				  <para>执行者完成一道菜的制作。</para>
+			  </section>
+			  <section>
+				  <title>最小保证</title>
+				  <para>系统将执行进度情况记入日志。</para>
+			  </section>
+		  </section>
+		  <section>
+			  <title>触发事件</title>
+			  <para>执行者启动用例</para>
+		  </section>
+
+		  <section>
+			  <title>主成功场景</title>
+			  <para><replaceable></replaceable></para>
+			  <orderedlist>
+				  <listitem><para>执行者选择“播放”<glossterm>食谱</glossterm></para></listitem>
+				  <listitem><para>系统将<glossterm>食谱</glossterm>文字转化为语音播放，同时播放插图或视频</para></listitem>
+				  <listitem><para></para></listitem>
+			  </orderedlist>
+		  </section>
+
+		  <section>
+			  <title>扩展</title>
+
+			  <para><replaceable>[在主成功场景下，对于因为特别条件而出现行为分支的地方，写出分支条件以及处理分支的<glossterm>步骤</glossterm>。大多数扩展以重新与主成功场景汇合而结束。]</replaceable></para>
+
+			  <itemizedlist>
+				  <listitem>
+					  <para>&lt;5a&gt;</para>
+
+					  <orderedlist>
+						  <listitem>
+							  <para></para>
+						  </listitem>
+					  </orderedlist>
+				  </listitem>
+			  </itemizedlist>
+		  </section>
+
+		  <section>
+			  <title>特殊需求</title>
+
+			  <para><replaceable>[特定于这个用例的，不适合在场景<glossterm>步骤</glossterm>中表述的非功能需求。包括法律、规章、适用标准、系统的质量属性（可用性、可靠性、性能，等等）、操作系统和环境、兼容性、设计限制等各种需求。]</replaceable></para>
+
+			  <section>
+				  <title>质量属性</title>
+
+				  <section>
+					  <title>性能</title>
+
+					  <para><replaceable>[系统及时提供服务的能力。包括：</replaceable></para>
+
+					  <itemizedlist>
+						  <listitem>
+							  <para><replaceable>事务响应时间——平均值，最大值</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>吞吐量——单位时间处理的事务数</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>容量——系统可容纳的客户总数或事务数</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>退化模式——当系统被降级时，可接受的运转模式</replaceable></para>
+						  </listitem>
+					  </itemizedlist>
+
+					  <para><replaceable>以及系统对资源的使用效率（CPU时间、内存占用、磁盘空间、通信带宽等等的百分比）。]</replaceable></para>
+				  </section>
+
+				  <section>
+					  <title>安全性</title>
+
+					  <para></para>
+				  </section>
+
+				  <section>
+					  <title>可靠性</title>
+
+					  <para><replaceable>[可靠性是系统在规定的条件下和规定的时间内，完成规定功能的能力。</replaceable></para>
+
+					  <para><replaceable>基本可靠性是系统在规定条件下无故障的持续时间或概率。若无特别指出，文档中提到的“可靠性”均指基本可靠性，以“平均失效前时间”（MTTF）度量。
+							  建议将软件系统视作可修复产品，因此可以不加区分地使用“平均失效前/故障时间”（MTTF）和“平均失效/故障间隔时间”（MTBF）,二者是等效的。</replaceable></para>
+
+					  <para><replaceable>需求必须仔细定义什么是“失效”或“故障”。 ]</replaceable></para>
+				  </section>
+
+				  <section>
+					  <title>易用性（Usability）</title>
+
+					  <para><replaceable>[易用性衡量用户准备输入、操作和理解系统输出所付出的努力。“中间用户可以在3分钟内完成XXXX操作”，“文件菜单中的所有功能都必须定义快捷键”都是可用性的例子。建议：</replaceable></para>
+
+					  <itemizedlist>
+						  <listitem>
+							  <para><replaceable>指明为了使用户能够完成简单任务以及完成普通日常工作所需要的培训时间；</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>指明典型最终用户可能的典型任务或事务的可度量任务时间；</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>与用户已知的或正在使用的系统进行比较；</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>指明在线帮助、向导、工具说明、用户手册以及其它形式的文档和帮助的存在和所需的特征</replaceable>；</para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>遵循的人机界面开发的规章和标准]</replaceable></para>
+						  </listitem>
+					  </itemizedlist>
+				  </section>
+
+				  <section>
+					  <title>有效性（Availability）</title>
+
+					  <para><replaceable>[有效性是系统在规定的条件下和规定时间内，处于可执行规定功能状态的能力，以“有效比例”（Percent
+							  Availability）表示。有效比例=平均失效前时间/(平均失效前时间+平均维修时间)。</replaceable></para>
+
+					  <para><replaceable>例：“工作日期间，当地时间早上6点到午夜，系统有效性至少达到99.5%，下午4点到6点，系统的有效性至少达到99.95%。”]</replaceable></para>
+				  </section>
+
+				  <section>
+					  <title>可维护性</title>
+
+					  <para><replaceable>[可维护性是系统在规定条件下和规定的时间内，按规定的程序和方法进行维修时，保持或恢复规定状态的能力，以“平均维修时间”（MTTR）度量。需求必须指明“修复”是否意味着所有用户都可以再一次访问所有服务，或者是否完全恢复的子集是可接受的。</replaceable></para>
+
+					  <para><replaceable>例：“系统90%的故障要在5分钟内可修复，99.9%的系统故障要在1小时内修复。”]</replaceable></para>
+				  </section>
+
+				  <section>
+					  <title>可伸缩性</title>
+
+					  <para><replaceable>[衡量系统“可通过扩展来增强处理能力”的能力。可通过度量扩展的上限和扩展的效率来衡量。]</replaceable></para>
+				  </section>
+
+				  <section>
+					  <title>健壮性</title>
+
+					  <para><replaceable>[健壮性是指在用户进行了不被允许的操作、相连的软硬件系统发生故障等系统外部发生非正常情况时，系统仍能够提供服务的能力。</replaceable></para>
+
+					  <para><replaceable>健壮的软件可以从发生问题的环境中完好地恢复并且可容忍用户的错误。当从用户那里获取健壮性的目标时，询问系统可能遇到的错误条件并且要了解用户想让系统如何响应。</replaceable></para>
+
+					  <para><replaceable>例：“所有的参数都要指定一个默认值，当输入数据丢失或无效时，使用默认数据。”]</replaceable></para>
+				  </section>
+
+				  <section>
+					  <title>互操作性</title>
+
+					  <para><replaceable>[互操作性表明系统与其它系统交换数据和服务的难易程度。为评估互操作性是否达到要求的程度，必须知道用户使用其它哪些系统与该系统相连接，以及彼此间交换哪些数据。例如：“系统应该能够从人力资源系统中导入员工基本信息。”]</replaceable></para>
+				  </section>
+			  </section>
+
+			  <section>
+				  <title>约束</title>
+
+				  <section>
+					  <title>技术约束</title>
+
+					  <para><replaceable>[这一部分表达了对系统的设计或开发系统的过程的限制。包括环境约束（如“用Java编写软件”）、技术或数据变化（指完成相同目标的多种不同方法。例如，“用户可以用键盘输入数据，作为一种选择，他也可以通过条码扫描仪输入数据。”）、兼容性（如，“新的应用必须能够在新旧两种平台上都能运行”）等。]</replaceable></para>
+				  </section>
+
+				  <section>
+					  <title>标准约束</title>
+
+					  <para><replaceable>[在这一部分列出系统必须遵循的技术标准和必须满足的行业标准。]</replaceable></para>
+				  </section>
+
+				  <section>
+					  <title>法规约束</title>
+
+					  <para><replaceable>[在这一部分列出系统适用或必须遵守的法律、（行业）规章。]</replaceable></para>
+				  </section>
+			  </section>
+		  </section>
+	  </section>
+	  <section>
+		  <title>搜索<glossterm>食谱</glossterm></title>
+		  <section>
+			  <title>简要描述</title>
+			  <para>该用例描述用户如何找到<glossterm>食谱</glossterm>。</para>
+		  </section>
+		  <section>
+			  <title>层次</title>
+			  <para>顶层</para>
+		  </section>
+		  <section>
+			  <title>发生频率</title>
+			  <para>最高每天数十次</para>
+		  </section>
+		  <section>
+			  <title>执行者</title>
+			  <itemizedlist>
+				  <listitem><para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaNovice" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectNoviceWen" xrefstyle="select: title"/></para></listitem>
+				  <listitem><para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaGourmet" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectGourmetWu" xrefstyle="select: title"/></para></listitem>
+				  <listitem><para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaGrandma" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectGrandmaXiong" xrefstyle="select: title"/></para></listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>前置条件</title>
+			  <para>无</para>
+		  </section>
+		  <section>
+			  <title>后置条件</title>
+			  <section>
+				  <title>成功保证</title>
+				  <para>系统找到满足用户搜索条件的食谱并列表呈现。</para>
+			  </section>
+			  <section>
+				  <title>最小保证</title>
+				  <para>系统将失败原因记入日志</para>
+			  </section>
+		  </section>
+		  <section>
+			  <title>触发事件</title>
+			  <para>执行者启动用例</para>
+		  </section>
+
+		  <section>
+			  <title>主成功场景</title>
+			  <orderedlist>
+				  <listitem>执行者输入搜索条件</listitem>
+				  <listitem>系统呈现符合条件的食谱列表</listitem>
+			  </orderedlist>
+		  </section>
+
+		  <section>
+			  <title>扩展</title>
+
+			  <para><replaceable>[在主成功场景下，对于因为特别条件而出现行为分支的地方，写出分支条件以及处理分支的<glossterm>步骤</glossterm>。大多数扩展以重新与主成功场景汇合而结束。]</replaceable></para>
+
+			  <itemizedlist>
+				  <listitem>
+					  <para>&lt;5a&gt;</para>
+
+					  <orderedlist>
+						  <listitem>
+							  <para></para>
+						  </listitem>
+					  </orderedlist>
+				  </listitem>
+			  </itemizedlist>
+		  </section>
+
+		  <section>
+			  <title>特殊需求</title>
+			  <section>
+				  <title>质量属性</title>
+				  <section>
+					  <title>性能</title>
+					  <itemizedlist>
+						  <listitem>
+							  <para>事务响应时间最大不超过1分钟</para>
+						  </listitem>
+					  </itemizedlist>
+				  </section>
+				  <!--section>
+					  <title>安全性</title>
+					  <para></para>
+				  </section-->
+
+				  <!--section>
+					  <title>可靠性</title>
+
+					  <para><replaceable>[可靠性是系统在规定的条件下和规定的时间内，完成规定功能的能力。</replaceable></para>
+
+					  <para><replaceable>基本可靠性是系统在规定条件下无故障的持续时间或概率。若无特别指出，文档中提到的“可靠性”均指基本可靠性，以“平均失效前时间”（MTTF）度量。
+							  建议将软件系统视作可修复产品，因此可以不加区分地使用“平均失效前/故障时间”（MTTF）和“平均失效/故障间隔时间”（MTBF）,二者是等效的。</replaceable></para>
+
+					  <para><replaceable>需求必须仔细定义什么是“失效”或“故障”。 ]</replaceable></para>
+				  </section-->
+				  <!--section>
+					  <title>易用性（Usability）</title>
+
+					  <para><replaceable>[易用性衡量用户准备输入、操作和理解系统输出所付出的努力。“中间用户可以在3分钟内完成XXXX操作”，“文件菜单中的所有功能都必须定义快捷键”都是可用性的例子。建议：</replaceable></para>
+
+					  <itemizedlist>
+						  <listitem>
+							  <para><replaceable>指明为了使用户能够完成简单任务以及完成普通日常工作所需要的培训时间；</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>指明典型最终用户可能的典型任务或事务的可度量任务时间；</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>与用户已知的或正在使用的系统进行比较；</replaceable></para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>指明在线帮助、向导、工具说明、用户手册以及其它形式的文档和帮助的存在和所需的特征</replaceable>；</para>
+						  </listitem>
+
+						  <listitem>
+							  <para><replaceable>遵循的人机界面开发的规章和标准]</replaceable></para>
+						  </listitem>
+					  </itemizedlist>
+				  </section-->
+
+				  <!--section>
+					  <title>有效性（Availability）</title>
+
+					  <para><replaceable>[有效性是系统在规定的条件下和规定时间内，处于可执行规定功能状态的能力，以“有效比例”（Percent
+							  Availability）表示。有效比例=平均失效前时间/(平均失效前时间+平均维修时间)。</replaceable></para>
+
+					  <para><replaceable>例：“工作日期间，当地时间早上6点到午夜，系统有效性至少达到99.5%，下午4点到6点，系统的有效性至少达到99.95%。”]</replaceable></para>
+				  </section-->
+
+				  <!--section>
+					  <title>可维护性</title>
+
+					  <para><replaceable>[可维护性是系统在规定条件下和规定的时间内，按规定的程序和方法进行维修时，保持或恢复规定状态的能力，以“平均维修时间”（MTTR）度量。需求必须指明“修复”是否意味着所有用户都可以再一次访问所有服务，或者是否完全恢复的子集是可接受的。</replaceable></para>
+
+					  <para><replaceable>例：“系统90%的故障要在5分钟内可修复，99.9%的系统故障要在1小时内修复。”]</replaceable></para>
+				  </section-->
+
+				  <!--section>
+					  <title>可伸缩性</title>
+
+					  <para><replaceable>[衡量系统“可通过扩展来增强处理能力”的能力。可通过度量扩展的上限和扩展的效率来衡量。]</replaceable></para>
+				  </section-->
+
+				  <!--section>
+					  <title>健壮性</title>
+
+					  <para><replaceable>[健壮性是指在用户进行了不被允许的操作、相连的软硬件系统发生故障等系统外部发生非正常情况时，系统仍能够提供服务的能力。</replaceable></para>
+
+					  <para><replaceable>健壮的软件可以从发生问题的环境中完好地恢复并且可容忍用户的错误。当从用户那里获取健壮性的目标时，询问系统可能遇到的错误条件并且要了解用户想让系统如何响应。</replaceable></para>
+
+					  <para><replaceable>例：“所有的参数都要指定一个默认值，当输入数据丢失或无效时，使用默认数据。”]</replaceable></para>
+				  </section-->
+				  <!--section>
+					  <title>互操作性</title>
+
+					  <para><replaceable>[互操作性表明系统与其它系统交换数据和服务的难易程度。为评估互操作性是否达到要求的程度，必须知道用户使用其它哪些系统与该系统相连接，以及彼此间交换哪些数据。例如：“系统应该能够从人力资源系统中导入员工基本信息。”]</replaceable></para>
+				  </section-->
+			  </section>
+
+			  <section>
+				  <title>约束</title>
+				  <section>
+					  <title>技术约束</title>
+					  <itemizedlist>
+						  <listitem>这个用例应能从其它同层用例启动</listitem>
+						  <listitem>优先搜索本地保存的食谱</listitem>
+					  </itemizedlist>
+				  </section>
+
+				  <!--section>
+					  <title>标准约束</title>
+
+					  <para><replaceable>[在这一部分列出系统必须遵循的技术标准和必须满足的行业标准。]</replaceable></para>
+				  </section>
+
+				  <section>
+					  <title>法规约束</title>
+
+					  <para><replaceable>[在这一部分列出系统适用或必须遵守的法律、（行业）规章。]</replaceable></para>
+				  </section-->
+			  </section>
+		  </section>
+	  </section>
+	  <section>
+		  <title>新建<glossterm>食谱</glossterm></title>
+		  <section>
+			  <title>简要描述</title>
+			  <para>该用例描述了用户如何通过编辑文字、插入图片、视频等操作完成一道<glossterm>食谱</glossterm>的制作。</para>
+		  </section>
+		  <section>
+			  <title>层次</title>
+			  <itemizedlist>
+				  <listitem>启动Coocipe</listitem>
+				  <listitem>搜索食谱</listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>发生频率</title>
+			  <para>每天3到5次，或每天50次（批量编辑）；每次持续十分钟。</para>
+		  </section>
+		  <section>
+			  <title>执行者</title>
+			  <para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaGourmet" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectGourmetWu" xrefstyle="select: title"/></para>
+		  </section>
+		  <section>
+			  <title>前置条件</title>
+			  <para>无</para>
+		  </section>
+		  <section>
+			  <title>后置条件</title>
+			  <section>
+				  <title>成功保证</title>
+				  <itemizedlist>
+					  <listitem><para>执行者通过编辑文字，插入图片、视频，调整<glossterm>步骤</glossterm>计时等操作完成<glossterm>步骤</glossterm>编辑并成功保存</para></listitem>
+					  <listitem><para>执行者完成<glossterm>原料</glossterm>和工具的编辑并保存</para></listitem>
+				  </itemizedlist>
+			  </section>
+			  <section>
+				  <title>最小保证</title>
+				  <itemizedlist>
+					  <listitem><para>系统将当前编辑成果保存以便恢复</para></listitem>
+					  <listitem><para>系统将异常情况写入日志</para></listitem>
+				  </itemizedlist>
+			  </section>
+		  </section>
+		  <section>
+			  <title>触发事件</title>
+			  <para>执行者启动用例</para>
+		  </section>
+
+		  <section>
+			  <title>主成功场景</title>
+			  <orderedlist>
+				  <listitem>用户提交新建食谱请求</listitem>
+				  <listitem>系统提示用户输入食谱名称</listitem>
+				  <listitem>用户输入食谱名称</listitem>
+				  <listitem>系统打开<glossterm>食谱</glossterm>并使其处于可编辑状态</listitem>
+				  <listitem>用户编辑<glossterm>食谱</glossterm></listitem>
+			  </orderedlist>
+		  </section>
+		  <section>
+			  <title>扩展</title>
+			  <itemizedlist>
+				  <listitem>
+					  <para>3a：系统中已有同名食谱</para>
+					  <orderedlist>
+						  <listitem>用户修改食谱名称</listitem>
+					  </orderedlist>
+				  </listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>特殊需求</title>
+			  <section>
+				  <title>质量属性</title>
+				  <section>
+					  <title>健壮性</title>
+					  <itemizedlist>
+						  <listitem><para>若用户编辑时应用崩溃，或因电力中断等外因导致应用运行中断，系统应保存最近编辑成果，并于下次打开<glossterm>食谱</glossterm>时恢复。</para></listitem>
+						  <listitem><para>若因网络无法连接导致终端无法与服务器端连接，应不致使用户感受到明显区别，包括功能的完整和数据的保存。</para></listitem>
+					  </itemizedlist>
+				  </section>
+			  </section>
+			  <!--section>
+				  <title>约束</title>
+				  <section>
+					  <title>技术约束</title>
+					  <para><replaceable>[这一部分表达了对系统的设计或开发系统的过程的限制。包括环境约束（如“用Java编写软件”）、技术或数据变化（指完成相同目标的多种不同方法。例如，“用户可以用键盘输入数据，作为一种选择，他也可以通过条码扫描仪输入数据。”）、兼容性（如，“新的应用必须能够在新旧两种平台上都能运行”）等。]</replaceable></para>
+				  </section>
+				  <section>
+					  <title>标准约束</title>
+					  <para><replaceable>[在这一部分列出系统必须遵循的技术标准和必须满足的行业标准。]</replaceable></para>
+				  </section>
+				  <section>
+					  <title>法规约束</title>
+					  <para><replaceable>[在这一部分列出系统适用或必须遵守的法律、（行业）规章。]</replaceable></para>
+				  </section>
+			  </section-->
+		  </section>
+	  </section>
+	  <section>
+		  <title>修改<glossterm>食谱</glossterm></title>
+		  <section>
+			  <title>简要描述</title>
+			  <para>该用例描述了用户如何通过编辑文字、插入图片、视频等操作完成一道<glossterm>食谱</glossterm>的制作。</para>
+		  </section>
+		  <section>
+			  <title>层次</title>
+			  <itemizedlist>
+				  <listitem>搜索食谱</listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>发生频率</title>
+			  <para>每天3到5次，或每天50次（批量编辑）；每次持续十分钟。</para>
+		  </section>
+		  <section>
+			  <title>执行者</title>
+			  <para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaGourmet" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectGourmetWu" xrefstyle="select: title"/></para>
+		  </section>
+		  <section>
+			  <title>前置条件</title>
+			  <itemizedlist>
+				  <listitem>系统已呈现需编辑的<glossterm>食谱</glossterm></listitem>
+				  <listitem>执行者对选中食谱有编辑权限</listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>后置条件</title>
+			  <section>
+				  <title>成功保证</title>
+				  <itemizedlist>
+					  <listitem><para>执行者通过编辑文字，插入图片、视频，调整<glossterm>步骤</glossterm>计时等操作完成<glossterm>步骤</glossterm>编辑并成功保存</para></listitem>
+					  <listitem><para>执行者完成<glossterm>原料</glossterm>和工具的编辑并保存</para></listitem>
+				  </itemizedlist>
+			  </section>
+			  <section>
+				  <title>最小保证</title>
+				  <itemizedlist>
+					  <listitem><para>系统将当前编辑成果保存以便恢复</para></listitem>
+					  <listitem><para>系统将异常情况写入日志</para></listitem>
+				  </itemizedlist>
+			  </section>
+		  </section>
+		  <section>
+			  <title>触发事件</title>
+			  <para>执行者启动用例</para>
+		  </section>
+
+		  <section>
+			  <title>主成功场景</title>
+			  <orderedlist>
+				  <listitem>用户选择要编辑的食谱并提交编辑请求</listitem>
+				  <listitem>系统以可编辑的方式打开并呈现食谱</listitem>
+				  <listitem>用户选择一个<glossterm>步骤</glossterm>，提交编辑<glossterm>步骤</glossterm>请求</listitem>
+				  <listitem>系统打开<glossterm>步骤</glossterm>并使其处于可编辑状态</listitem>
+				  <listitem>用户编辑<glossterm>步骤</glossterm></listitem>
+				  <listitem>系统从用户编辑<glossterm>步骤</glossterm>的输入中识别<glossterm>原料</glossterm>和工具</listitem>
+			  </orderedlist>
+			  <para>用户重复以上<glossterm>步骤</glossterm>，直至完成所有<glossterm>步骤</glossterm>编辑</para>
+			  <orderedlist continuation="continues">
+				  <listitem><para>系统提示用户编辑<glossterm>原料</glossterm>和工具</para></listitem>
+				  <listitem><para>用户编辑<glossterm>原料</glossterm>和工具</para></listitem>
+			  </orderedlist>
+		  </section>
+		  <section>
+			  <title>扩展</title>
+			  <itemizedlist>
+				  <listitem>
+					  <para>3a：没有<glossterm>步骤</glossterm>可供选择</para>
+					  <orderedlist>
+						  <listitem><para>用户新建一个<glossterm>步骤</glossterm></para></listitem>
+					  </orderedlist>
+				  </listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>特殊需求</title>
+			  <section>
+				  <title>质量属性</title>
+				  <section>
+					  <title>健壮性</title>
+					  <itemizedlist>
+						  <listitem><para>若用户编辑时应用崩溃，或因电力中断等外因导致应用运行中断，系统应保存最近编辑成果，并于下次打开<glossterm>食谱</glossterm>时恢复。</para></listitem>
+						  <listitem><para>若因网络无法连接导致终端无法与服务器端连接，应不致使用户感受到明显区别，包括功能的完整和数据的保存。</para></listitem>
+					  </itemizedlist>
+				  </section>
+			  </section>
+			  <!--section>
+				  <title>约束</title>
+				  <section>
+					  <title>技术约束</title>
+					  <para><replaceable>[这一部分表达了对系统的设计或开发系统的过程的限制。包括环境约束（如“用Java编写软件”）、技术或数据变化（指完成相同目标的多种不同方法。例如，“用户可以用键盘输入数据，作为一种选择，他也可以通过条码扫描仪输入数据。”）、兼容性（如，“新的应用必须能够在新旧两种平台上都能运行”）等。]</replaceable></para>
+				  </section>
+				  <section>
+					  <title>标准约束</title>
+					  <para><replaceable>[在这一部分列出系统必须遵循的技术标准和必须满足的行业标准。]</replaceable></para>
+				  </section>
+				  <section>
+					  <title>法规约束</title>
+					  <para><replaceable>[在这一部分列出系统适用或必须遵守的法律、（行业）规章。]</replaceable></para>
+				  </section>
+			  </section-->
+		  </section>
+	  </section>
+	  <section>
+		  <title>删除<glossterm>食谱</glossterm></title>
+		  <section>
+			  <title>简要描述</title>
+			  <para>该用例描述了<b>用户</b>如何删除一道食谱。</para>
+		  </section>
+		  <section>
+			  <title>层次</title>
+			  <itemizedlist>
+				  <listitem>搜索食谱</listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>发生频率</title>
+			  <para>批量编辑食谱时，与编辑食谱的频次正相关。除此以外，发生频率极低，低于新建食谱用例。</para>
+		  </section>
+		  <section>
+			  <title>执行者</title>
+			  <para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaGourmet" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectGourmetWu" xrefstyle="select: title"/></para>
+		  </section>
+		  <section>
+			  <title>前置条件</title>
+			  <itemizedlist>
+				  <listitem>系统已呈现<glossterm>食谱</glossterm>列表</listitem>
+				  <listitem>执行者有对选中食谱的删除权限</listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>后置条件</title>
+			  <section>
+				  <title>成功保证</title>
+				  <itemizedlist>
+					  <listitem><para>食谱被成功删除</para></listitem>
+				  </itemizedlist>
+			  </section>
+			  <section>
+				  <title>最小保证</title>
+				  <itemizedlist>
+					  <listitem><para>系统将异常情况写入日志</para></listitem>
+				  </itemizedlist>
+			  </section>
+		  </section>
+		  <section>
+			  <title>触发事件</title>
+			  <para>执行者启动用例</para>
+		  </section>
+
+		  <section>
+			  <title>主成功场景</title>
+			  <orderedlist>
+				  <listitem>用户选择要删除的食谱</listitem>
+				  <listitem>用户提交删除请求</listitem>
+				  <listitem>系统删除被选中的食谱</listitem>
+			  </orderedlist>
+		  </section>
+		  <section>
+			  <title>扩展</title>
+			  <itemizedlist>
+				  <listitem>
+					  <para>2a：用户没有删除所选食谱的权限</para>
+					  <orderedlist>
+						  <listitem>系统阻止用户提交删除请求</listitem>
+					  </orderedlist>
+				  </listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>特殊需求</title>
+			  <section>
+				  <title>质量属性</title>
+			  </section>
+			  <!--section>
+				  <title>约束</title>
+				  <section>
+					  <title>技术约束</title>
+					  <para><replaceable>[这一部分表达了对系统的设计或开发系统的过程的限制。包括环境约束（如“用Java编写软件”）、技术或数据变化（指完成相同目标的多种不同方法。例如，“用户可以用键盘输入数据，作为一种选择，他也可以通过条码扫描仪输入数据。”）、兼容性（如，“新的应用必须能够在新旧两种平台上都能运行”）等。]</replaceable></para>
+				  </section>
+				  <section>
+					  <title>标准约束</title>
+					  <para><replaceable>[在这一部分列出系统必须遵循的技术标准和必须满足的行业标准。]</replaceable></para>
+				  </section>
+				  <section>
+					  <title>法规约束</title>
+					  <para><replaceable>[在这一部分列出系统适用或必须遵守的法律、（行业）规章。]</replaceable></para>
+				  </section>
+			  </section-->
+		  </section>
+	  </section>
+	  <section>
+		  <title>添加步骤</title>
+		  <section>
+			  <title>简要描述</title>
+			  <para>该用例描述了用户在编辑食谱时如何添加一个步骤。</para>
+		  </section>
+		  <section>
+			  <title>层次</title>
+			  <itemizedlist>
+				  <listitem>新建食谱</listitem>
+				  <listitem>修改食谱</listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>发生频率</title>
+			  <para>取决于用例“新建食谱”或“修改<glossterm>食谱</glossterm>”的发生频率。一个“新建食谱”包含至少一个添加<glossterm>步骤</glossterm>，一个“修改<glossterm>食谱</glossterm>”用例可以不包含添加步骤用例。</para>
+		  </section>
+		  <section>
+			  <title>执行者</title>
+			  <para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaGourmet" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectGourmetWu" xrefstyle="select: title"/></para>
+		  </section>
+		  <section>
+			  <title>前置条件</title>
+			  <para>无</para>
+		  </section>
+		  <section>
+			  <title>后置条件</title>
+			  <section>
+				  <title>成功保证</title>
+				  <itemizedlist>
+					  <listitem>执行者初始化一个新的步骤，使其处于编辑状态</listitem>
+					  </itemizedlist>
+				  </section>
+				  <section>
+					  <title>最小保证</title>
+					  <itemizedlist>
+						  <listitem>无</listitem>
+					  </itemizedlist>
+				  </section>
+			  </section>
+			  <section>
+				  <title>触发事件</title>
+				  <para>执行者启动用例</para>
+			  </section>
+
+			  <section>
+				  <title>主成功场景</title>
+				  <orderedlist>
+					  <listitem>用户提交添加步骤请求</listitem>
+					  <listitem>系统初始化一个步骤，使其处于编辑状态</listitem>
+					  <listitem>用户编辑步骤</listitem>
+				  </orderedlist>
+			  </section>
+			  <section>
+				  <title>扩展</title>
+				  <itemizedlist>
+					  <listitem>无</listitem>
+				  </itemizedlist>
+			  </section>
+			  <section>
+				  <title>特殊需求</title>
+				  <section>
+					  <title>质量属性</title>
+				  </section>
+				  <!--section>
+				  <title>约束</title>
+				  <section>
+					  <title>技术约束</title>
+					  <para><replaceable>[这一部分表达了对系统的设计或开发系统的过程的限制。包括环境约束（如“用Java编写软件”）、技术或数据变化（指完成相同目标的多种不同方法。例如，“用户可以用键盘输入数据，作为一种选择，他也可以通过条码扫描仪输入数据。”）、兼容性（如，“新的应用必须能够在新旧两种平台上都能运行”）等。]</replaceable></para>
+				  </section>
+				  <section>
+					  <title>标准约束</title>
+					  <para><replaceable>[在这一部分列出系统必须遵循的技术标准和必须满足的行业标准。]</replaceable></para>
+				  </section>
+				  <section>
+					  <title>法规约束</title>
+					  <para><replaceable>[在这一部分列出系统适用或必须遵守的法律、（行业）规章。]</replaceable></para>
+				  </section>
+			  </section-->
+		  </section>
+	  </section>
+	  <section>
+		  <title>编辑<glossterm>步骤</glossterm></title>
+		  <section>
+			  <title>简要描述</title>
+			  <para>该用例描述用户在编辑<glossterm>食谱</glossterm>时如何编辑一个<glossterm>步骤</glossterm>。</para>
+		  </section>
+		  <section>
+			  <title>层次</title>
+			  <itemizedlist>
+				  <listitem>编辑<glossterm>食谱</glossterm></listitem>
+				  <listitem>添加<glossterm>步骤</glossterm></listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>发生频率</title>
+			  <para>取决于用例“编辑食谱”或“添加<glossterm>步骤</glossterm>”的发生频率。一个“编辑食谱”用例可以不包含编辑<glossterm>步骤</glossterm>。一个“添加<glossterm>步骤</glossterm>”用例有且只有一个“编辑步骤”用例</para>
+		  </section>
+		  <section>
+			  <title>执行者</title>
+			  <para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaGourmet" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectGourmetWu" xrefstyle="select: title"/></para>
+		  </section>
+		  <section>
+			  <title>前置条件</title>
+			  <para>系统已打开需编辑的<glossterm>步骤</glossterm>并使其处于可编辑状态</para>
+		  </section>
+		  <section>
+			  <title>后置条件</title>
+			  <section>
+				  <title>成功保证</title>
+				  <para>执行者通过编辑文字，插入图片、视频，调整<glossterm>步骤</glossterm>计时等操作完成<glossterm>步骤</glossterm>编辑并成功保存。</para>
+			  </section>
+			  <section>
+				  <title>最小保证</title>
+				  <itemizedlist>
+					  <listitem><para>系统将异常情况写入日志</para></listitem>
+				  </itemizedlist>
+			  </section>
+		  </section>
+		  <section>
+			  <title>触发事件</title>
+			  <para>执行者启动用例</para>
+		  </section>
+		  <section>
+			  <title>主成功场景</title>
+			  <orderedlist>
+				  <listitem>
+					  <para>用户以任意顺序执行以下操作：</para>
+					  <itemizedlist>
+						  <listitem>用户输入文字</listitem>
+						  <listitem>用户选择图片，插入到<glossterm>步骤</glossterm>中，系统以适当比例显示图片缩略图</listitem>
+						  <listitem>用户选择视频，插入到<glossterm>步骤</glossterm>中，系统显示视频占位符，并确定视频播放起止时间</listitem>
+					  </itemizedlist>
+				  </listitem>
+				  <listitem><para>用户调整文字、图片或视频的播放时间</para></listitem>
+			  </orderedlist>
+			  <para>用户重复以上操作，直至用户确认完成<glossterm>步骤</glossterm>编辑</para>
+		  </section>
+		  <section>
+			  <title>扩展</title>
+			  <itemizedlist>
+				  <listitem>
+					  <para>1a:用户输入了文字、图片和视频</para>
+					  <orderedlist>
+						  <listitem>用户随时可删除输入的文字和插入的图片、视频</listitem>
+						  <listitem>系统移除图片或视频占位符，调整保留内容的播放时间。</listitem>
+					  </orderedlist>
+				  </listitem>
+				  <listitem>
+					  <para>1b:当用户插入视频:</para>
+					  <orderedlist>
+						  <listitem>系统计算视频播放时长，显示起止时间，显示一定时间间隔的帧画面列表</listitem>
+						  <listitem>用户调整帧画面列表时间间隔</listitem>
+						  <para>用户重复以上<glossterm>步骤</glossterm>直至完成调整。</para>
+					  </orderedlist>
+				  </listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>特殊需求</title>
+			  <section>
+				  <title>质量属性</title>
+			  </section>
+			  <section>
+				  <title>约束</title>
+				  <section>
+					  <title>技术约束</title>
+					  <itemizedlist>
+						  <listitem>在扩展1b中，用户可通过手势操作调整帧画面列表时间间隔</listitem>
+					  </itemizedlist>
+				  </section>
+			  </section>
+		  </section>
+	  </section>
+	  <section>
+		  <title>删除<glossterm>步骤</glossterm></title>
+		  <section>
+			  <title>简要描述</title>
+			  <para>该用例描述了用户如何删除食谱中的一个步骤。</para>
+		  </section>
+		  <section>
+			  <title>层次</title>
+			  <itemizedlist>
+				  <listitem>编辑食谱</listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>发生频率</title>
+			  <para>批量编辑食谱时，与编辑食谱的频次正相关。除此以外，发生频率低，低于添加步骤用例。</para>
+		  </section>
+		  <section>
+			  <title>执行者</title>
+			  <para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaGourmet" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectGourmetWu" xrefstyle="select: title"/></para>
+		  </section>
+		  <section>
+			  <title>前置条件</title>
+			  <itemizedlist>
+				  <listitem>系统已呈现<glossterm>食谱</glossterm>并使其处于编辑状态</listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>后置条件</title>
+			  <section>
+				  <title>成功保证</title>
+				  <itemizedlist>
+					  <listitem>步骤被成功删除</listitem>
+				  </itemizedlist>
+			  </section>
+			  <section>
+				  <title>最小保证</title>
+				  <itemizedlist>
+					  <listitem><para>系统将异常情况写入日志</para></listitem>
+				  </itemizedlist>
+			  </section>
+		  </section>
+		  <section>
+			  <title>触发事件</title>
+			  <para>执行者启动用例</para>
+		  </section>
+
+		  <section>
+			  <title>主成功场景</title>
+			  <orderedlist>
+				  <listitem>用户选择要删除的步骤</listitem>
+				  <listitem>用户提交删除请求</listitem>
+				  <listitem>系统删除被选中的步骤</listitem>
+			  </orderedlist>
+		  </section>
+		  <section>
+			  <title>扩展</title>
+			  <itemizedlist>
+				  <listitem>无</listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>特殊需求</title>
+			  <section>
+				  <title>质量属性</title>
+			  </section>
+			  <!--section>
+				  <title>约束</title>
+				  <section>
+					  <title>技术约束</title>
+					  <para><replaceable>[这一部分表达了对系统的设计或开发系统的过程的限制。包括环境约束（如“用Java编写软件”）、技术或数据变化（指完成相同目标的多种不同方法。例如，“用户可以用键盘输入数据，作为一种选择，他也可以通过条码扫描仪输入数据。”）、兼容性（如，“新的应用必须能够在新旧两种平台上都能运行”）等。]</replaceable></para>
+				  </section>
+				  <section>
+					  <title>标准约束</title>
+					  <para><replaceable>[在这一部分列出系统必须遵循的技术标准和必须满足的行业标准。]</replaceable></para>
+				  </section>
+				  <section>
+					  <title>法规约束</title>
+					  <para><replaceable>[在这一部分列出系统适用或必须遵守的法律、（行业）规章。]</replaceable></para>
+				  </section>
+			  </section-->
+		  </section>
+	  </section>
+	  <section>
+		  <title>编辑<glossterm>原料</glossterm>列表</title>
+		  <section>
+			  <title>简要描述</title>
+			  <para>该用例描述用户在编辑<glossterm>食谱</glossterm>时如何添加、删除、编辑<glossterm>原料</glossterm>。</para>
+		  </section>
+		  <section>
+			  <title>层次</title>
+			  <itemizedlist>
+				  <listitem><para>编辑<glossterm>食谱</glossterm></para></listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>发生频率</title>
+			  <para>取决于用例“编辑<glossterm>食谱</glossterm>”的发生频率。一次“编辑<glossterm>食谱</glossterm>”的过程中仅包含一次编辑<glossterm>原料</glossterm>的过程。</para>
+		  </section>
+		  <section>
+			  <title>执行者</title>
+			  <para><olink targetdoc="coocipe_usermodel" targetptr="sectPersonaGourmet" xrefstyle="select: title"/><olink targetdoc="coocipe_usermodel" targetptr="sectGourmetWu" xrefstyle="select: title"/></para>
+		  </section>
+		  <section>
+			  <title>前置条件</title>
+			  <para>系统已打开需编辑的<glossterm>原料</glossterm>列表并使其处于可编辑状态</para>
+		  </section>
+		  <section>
+			  <title>后置条件</title>
+			  <section>
+				  <title>成功保证</title>
+				  <para>执行者通过添加、删除、编辑等操作完成<glossterm>原料</glossterm>的编辑编辑并成功保存。</para>
+			  </section>
+			  <section>
+				  <title>最小保证</title>
+				  <itemizedlist>
+					  <listitem><para>系统将异常情况写入日志</para></listitem>
+				  </itemizedlist>
+			  </section>
+		  </section>
+		  <section>
+			  <title>触发事件</title>
+			  <itemizedlist>
+				  <listitem>执行者启动用例</listitem>>
+				  <listitem>当识别<glossterm>原料</glossterm>用例完成</listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>主成功场景</title>
+			  <orderedlist>
+				  <listitem>用户查看原料列表</listitem>
+			  </orderedlist>
+		  </section>
+		  <section>
+			  <title>扩展</title>
+			  <itemizedlist>
+				  <listitem>
+					  <para>1a:添加原料项</para>
+					  <orderedlist>
+						  <listitem>用户请求添加原料项</listitem>
+						  <listitem>
+							  <para>用户输入原料名称、用量</para>
+							  <itemizedlist>
+								  <listitem>
+									  <para>a:系统找到原料定义</para>
+									  <orderedlist>
+										  <listitem>用户选择系统中已定义的原料</listitem>
+									  </orderedlist>
+								  </listitem>
+								  <listitem>
+									  <para>b:系统未找到原料定义</para>
+									  <orderedlist>
+										  <listitem>
+											  <para>系统提示用户定义原料</para>
+											  <itemizedlist>
+												  <listitem>a:用户定义原料</listitem>
+												  <listitem><para>b:用户不定义原料</para>
+													  <orderedlist>
+														  <listitem>系统建立原料定义</listitem>
+														  <listitem>系统将原料项添加到列表</listitem>
+													  </orderedlist>
+												  </listitem>
+											  </itemizedlist>
+										  </listitem>
+									  </orderedlist>
+								  </listitem>
+							  </itemizedlist>
+						  </listitem>
+					  </orderedlist>
+					  <para>用户重复执行以上步骤，直至完成原料项的添加。</para>
+				  </listitem>
+				  <listitem>
+					  <para>1b:修改原料项</para>
+					  <orderedlist>
+						  <listitem>用户选择要修改的原料项，提交修改请求</listitem>
+						  <listitem>系统将原料用量设为可编辑状态</listitem>
+						  <listitem>用户输入或选择原料用量</listitem>
+					  </orderedlist>
+				  </listitem>
+				  <listitem>
+					  <para>1c:删除原料项</para>
+					  <orderedlist>
+						  <listitem>用户选择要删除的原料项，提交删除请求</listitem>
+						  <listitem>系统将原料项从原料列表中移除</listitem>
+					  </orderedlist>
+				  </listitem>
+			  </itemizedlist>
+		  </section>
+		  <section>
+			  <title>特殊需求</title>
+			  <section>
+				  <title>质量属性</title>
+			  </section>
+			  <section>
+				  <title>约束</title>
+				  <section>
+					  <title>技术约束</title>
+					  <itemizedlist>
+						  <listitem>扩展1c中，用户可以通过一个动作选择显示出的所有原料项以供删除</listitem>
+					  </itemizedlist>
+				  </section>
+			  </section>
+		  </section>
+	  </section>
+  </section>
+  <glossary role="auto"/>
+<!--section>
+		<title>参考</title>
+
+		<para><replaceable>[这一小节应该提供这个文件中引用的文档的完整列表。每一个文档都应该给出标题、报告编号（如果有）、日期，和出版组织。详述可以获取引用文档的源头。这部分信息可以是对附录或其它文档的引用]</replaceable><bibliolist>
+			<bibliomixed><bibliomset relation="article"><author>
+						<personname><replaceable>&lt;作者&gt;</replaceable></personname>
+						</author><title
+						role="article"><replaceable>&lt;标题&gt;</replaceable></title></bibliomset><bibliomset><pubdate>&lt;出版日期&gt;</pubdate></bibliomset><bibliomset><publisher>
+						<publishername><replaceable>&lt;出版社&gt;</replaceable></publishername>
+			</publisher></bibliomset></bibliomixed>
+	</bibliolist></para>
+</section-->
+<para>食谱测试头接父元素</para>
+<para>食谱</para>测试头接父元素尾不接，本例不应匹配</listitem>
+<listitem>食谱</para>测试头接父元素尾不接，本例不应匹配</listitem>
+<listitem>测试头尾不接父元素食谱,本例不应匹配</listitem>
+<para>食谱测试头接父元素尾不接，不配对标签</tara1>
+<para width='20'>食谱测试头接尾不接带属性父元素</para>
+<para>测试尾接头不接父元素食谱</para>
+<para>食谱</para>测试尾接父元素头不接，本例不应匹配</listitem>
+<para>测试尾接父元素头不接，不配对标签食谱</tara1>
+<para width='20'>测试尾接头不接带属性父元素食谱</para>
+<para>食谱</para>本例不应匹配
+<para>测试食谱</para>
+<para>测试食谱测试</para>
+<para>该用例描述了<b>用户</b>食谱如何删除一道。</para>
+<para>该用例描述了<b>用户食谱</b>如何删除一道。</para>
+<para>该用例描述了食谱<b>用户</b>如何删除一道。</para>
+<para>该用例描述了<child>食谱</child>如何删除一道。</para>
+<para>测试glossterm<quote>食谱</quote>子元素</para>
+<para>测试glossterm<quote>食谱尾不接</quote>子元素</para>
+<para>测试glossterm<quote>食谱头接</quote>子元素</para>
+<para>测试glossterm<quote>头接食谱尾不接</quote>子元素</para>
+</article>
+<\(para\)[^<>]\{-}>\zs食谱\(<\/\1>\)\@!
+\(<\(para\)[^<>]\{-}>\)\@<!食谱\ze<\/para>
+下面的模式可以全匹配头接、尾接、头尾不接，但同时也匹配glossterm子元素内的值
+\(<para[^<>]\{-}>.\{-}\)\@<=\(<glossterm[^<>]\{-}>\)\@<!食谱\(<\/glossterm>\)\@!\(.\{-}<\/para>\)\@=
+下面的模式可以全匹配头接、尾接、头尾不接，且不匹配glossterm子元素内的值
+\(<para[^<>]\{-}>.\{-}\)\@<=\(\(<glossterm[^<>]\{-}>\)\|\(<child[^<>]\{-}>\)\)\@<!食谱\(<\/glossterm>\)\@!\(.\{-}<\/para>\)\@=
