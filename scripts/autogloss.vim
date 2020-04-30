@@ -27,9 +27,19 @@ catch
 	finish
 endtry
 
-"let b:childrenhead=join(map(copy(b:children),'"<".v:val."[^<>]\\{-}>"'),'\|')
-"let b:childrentail=join(map(copy(b:children),'"</".v:val.">"'),'\|')
-let b:linenumber=1
+try
+	let b:changelist=getchangelist(bufnr("%"))
+catch
+	finish
+endtry
+
+if empty(b:changelist)==1
+	finish
+else
+	let b:changedlinenrlist=map(b:changelist[0],
+endif
+
+
 for b:line in getline(1,line('$'))
 	for term in b:terms
 		"以下各正则算法假设parents和children没有交集，假设各XML文档结构良好，符合docbook规范定义。
