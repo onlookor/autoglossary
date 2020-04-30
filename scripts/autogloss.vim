@@ -11,7 +11,7 @@ try
 catch
 	normal gg
 	let b:isGlossary=search('<?xml.\+>\_s*<glossary\_.\+</glossary>')
-	exe "norm \<c-o>"
+	norm \<c-o>
 	if b:isGlossary==1
 		finish	
 	endif
