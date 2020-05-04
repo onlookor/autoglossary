@@ -36,11 +36,14 @@ endtry
 if empty(b:changelist)==1
 	finish
 else
-	let b:changedlinenrlist=map(b:changelist[0],
+	let b:changedlinenrlist=map(b:changelist[0],'v:val["lnum"]')
 endif
 
+cal uniq(sort(b:changedlinenrlist,'n'))
 
-for b:line in getline(1,line('$'))
+let b:changedlines=map(b:changedlinenrlist,'getline(v:val)')
+
+for b:line in b:changedlines
 	for term in b:terms
 		"以下各正则算法假设parents和children没有交集，假设各XML文档结构良好，符合docbook规范定义。
 		"let b:patterns1=map(copy(b:parents),'"<".v:val.">".term."</".v:val.">"')
