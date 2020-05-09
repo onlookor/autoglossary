@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glossary version="5.0" xmlns="http://docbook.org/ns/docbook"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:m="http://www.w3.org/1998/Math/MathML"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:db="http://docbook.org/ns/docbook"
+	xml:id="glossary"
+	lang="zh_cn">
+	<info>
+		<title>术语表</title>
+	<author>
+		<personname><surname>魏</surname><firstname>耿智</firstname></personname>
+		<affiliation>
+			<orgname>Ways</orgname>
+		</affiliation>
+	</author>
+	<!--pubdate></pubdate>
+    <releaseinfo></releaseinfo>
+
+    <revhistory>
+      <revision>
+	<revnumber><replaceable>&lt;修订号&gt;</replaceable></revnumber>
+
+	<date></date>
+
+	<author>
+	   &lt;修订人&gt; 
+	</author>
+
+	<revdescription>
+	   &lt;修订描述&gt; 
+	</revdescription>
+      </revision>
+    </revhistory-->
+  </info>
+
+  <glossentry xml:id="glsRecipe">
+	  <glossterm>食谱</glossterm>
+	  <glossdef>
+		  <para>一个食谱是完成一道食品制作的指导。它由原料清单和步骤组成。</para>
+		  <para>Coocipe中的食谱有静态的和动态的两种展示方式。静态展示方式将文字和图片以特定的布局排版，用户体验与浏览网页的体验相一致。动态展示方式按预定的时长播报语音，同时播放图片和视频，指导用户按步骤完成食品的制作。</para>
+		  <para>同义词：<glosssee otherterm="glsRecipeAlias">菜谱</glosssee>。</para>
+		  <glossseealso otherterm="glsStep"/><glossseealso otherterm="glsMaterial"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="glsRecipeAlias">
+	  <glossterm>菜谱</glossterm>
+	  <glossdef>
+		  <para>同<glosssee otherterm="glsRecipe"><quote>食谱</quote></glosssee>。</para>
+		  <glossseealso otherterm="glsStep"/><glossseealso otherterm="glsMaterial"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="glsStep">
+	  <glossterm>步骤</glossterm>
+	  <glossdef>
+		  <para>步骤是食谱的一个组成部分。一个食谱包含至少一个步骤。播放食谱时，多个步骤之间有时间上的先后顺序。</para>
+		  <para>一个步骤应该改变原料、工具、厨师至少其中一个的状态。一个步骤应该改变原料的部分或者全部，使其状态改变，成为下一个步骤所用到的加工品，食谱的最后一个步骤则应完成原料状态的最终改变，得到食品。或者一个步骤应该在连续的时间占用某个工具或某几种工具的组合，比如用一口锅在燃气灶上煮原料。又或者一个步骤占用一位厨师一段连续的时间和关注，完成一段操作。在一个步骤进行的期间，所涉及的原料、工具和厨师不可为其它步骤所用。</para>
+		  <glossseealso otherterm="glsRecipe"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="glsMaterial">
+	  <glossterm>原料</glossterm>
+	  <glossdef>
+		  <para>也叫<glosssee otherterm="glsMaterialAlias"><quote>食材</quote></glosssee>。</para>
+		  <para>原料是制作一道食品所用到的蔬菜、肉类、谷物、水果等原材料及其加工品和调料的总称，是食谱的一个组成部分。一个食谱包含至少一种原料。一个食谱必须制定所需原料的用量，按重量、容量，或用户自定义的计量单位。</para>
+		  <para>原料可以是经由步骤而得的加工品，比如某种酱料。在一个用到这种酱料的食谱中，可以将这种酱料作为原料列出，必要时亦可扩充步骤，将制作该酱料的步骤纳为食谱的一部分，并在原料列表中增加制作该酱料的原料。</para>
+		  <glossseealso otherterm="glsDish"/><glossseealso otherterm="glsRecipe"/><glossseealso otherterm="glsStep"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="glsMaterialAlias">
+	  <glossterm>食材</glossterm>
+	  <glossdef>
+		  <para>同<glosssee otherterm="glsMaterial"><quote>原料</quote></glosssee>。</para>
+		  <glossseealso otherterm="glsDish"/><glossseealso otherterm="glsRecipe"/><glossseealso otherterm="glsStep"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="glsTool">
+	  <glossterm>工具</glossterm>
+	  <glossdef>
+		  <para>工具是在完成一道食品的过程中作用于原料的可反复使用的物件，包括各种容器（锅盆碗盏，瓶、罐、壶、坛、缸、桶等）、各种加热装置（燃气灶、微波炉、烤箱、电磁炉、电炉等）、刀具、量具、勺、铲、筷，以及各种专用装置如搅拌机等等。工具由厨师操作。</para>
+		  <glossseealso otherterm="glsChef"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="glsChef">
+	  <glossterm>厨师</glossterm>
+	  <glossdef>
+		  <para>厨师是有资格完成一道食品或者有资格完成一个步骤的人员。 </para>
+		  <glossseealso otherterm="glsTool"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="glsMenu">
+	  <glossterm>食单</glossterm>
+	  <glossdef>
+		  <para>食单是一次餐宴活动中制作的食品的集合。它包含食品的制作步骤和时间安排，通常是综合了多个食谱的结果。</para>
+		  <para>同义词：<glosssee otherterm="glsMenuAlias">菜单</glosssee>。</para>
+		  <glossseealso otherterm="glsDish"/><glossseealso otherterm="glsRecipe"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="glsMenuAlias">
+	  <glossterm>菜单</glossterm>
+	  <glossdef>
+		  <para>同<glosssee otherterm="glsMenu"><quote>食单</quote></glosssee>。</para>
+		  <glossseealso otherterm="glsDish"/><glossseealso otherterm="glsRecipe"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="glsDish">
+	  <glossterm>食品</glossterm>
+	  <glossdef>
+		  <para>食品是在食谱的指导下完成食单的结果。</para>
+		  <glossseealso otherterm="glsMenu"/><glossseealso otherterm="glsRecipe"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="glsDishAlias">
+	  <glossterm>菜品</glossterm>
+	  <glossdef>
+		  <para>同<glosssee otherterm="glsDish"><quote>食品</quote></glosssee>。</para>
+		  <glossseealso otherterm="glsMenu"/><glossseealso otherterm="glsRecipe"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="glsHandheldTerm">
+	  <glossterm>手持终端</glossterm>
+	  <glossdef>
+		  <para>手持终端是Coocipe应用的交互平台。Coocipe应用支持运行iOS系统或者Android系统的手持设备，包括手机和平板设备。</para>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="interactionplatform">
+	  <glossterm>交互平台</glossterm>
+	  <acronym>平台</acronym>
+	  <glossdef>
+		  <para>在用户与产品的交互和产品内部操作方面，平台可以看作使产品运行的硬件和软件的组合。</para>
+		  <para>平台”不是一个定义完全良好的概念，它更像是一个描述产品许多重要特征的速记，比如物理形态、显示尺寸和分辨率、输入方法、网络连接、操作系统，和数据库容量等等。所有这些因素都对产品设计、建造，和使用方式有重要影响。选择正确的平台是一个平衡的活动，此处你必须找到最佳击球点，它最好地支持了你的人物角色需要和背景，并保持在业务约束、目标和技术能力之内。</para>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="posture">
+	  <glossterm>软件姿态</glossterm>
+	  <acronym>姿态</acronym>
+	  <glossdef>
+		  <para>产品的姿态是它的行为方式——它将自己呈现给用户的方式。姿态是一种探讨的方式，探讨用户会在与产品的交互中投入多少关注，以及产品行为怎样对这种关注做出反应。这种关注也必须基于对可能的使用背景和环境的理解。</para>
+		  <para>产品的外观和行为应该反映它们的使用方式，而不是设计师的个人品位。从姿态的角度看，程序的外观不仅仅是审美的选择，而是行为的选择。程序的姿态是它行为基础的一部分，无论你做出什么样的审美选择，它都应该与这个姿态协调一致。</para>
+		  <para>界面姿态为设计的剩余部分指示了许多重要的指导原则，但是姿态不是简单的非黑即白的问题。正如一个人可以在不同的背景下以许多略有不同的方式表现自己，某些产品可以展示许多不同的姿态特征。在火车旅途中阅读黑莓手机中的电子邮件时，用户也许聚精会神地投入到与设备的交互中（并期望得到与此相称的体验），而如果这同一个用户是在奔赴会议的途中用它来查询地址，她投入的关注度会少得多。类似地，虽然字处理软件通常应该为专注投入和频繁的用户关注优化，它也应该有类似表格构造工具这样的一些临时或很少使用的工具。象这种情况，值得总体上为产品定义一个主要的姿态，并考虑个别姿态的特征和使用背景。</para>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="sovereign">
+	  <glossterm>独占姿态</glossterm>
+	  <glossdef>
+		  <para>全屏，长时间内独占用户注意力的姿态。</para>
+		  <para>独占式应用程序提供较多的功能和特性，并且用户会长时间持续使用它们。因为它们长时间占据屏幕，用户与它们的交互非常复杂，需要全神贯注。使用独占式应用程序的用户经常处于一种称为流（flow）的状态。</para>
+		  <para>独占式应用程序的特性是长时间的连续使用。作为主要工具，它控制着用户的工作流程。</para>
+		  <glossseealso otherterm="posture"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="transient">
+	  <glossterm>暂时姿态</glossterm>
+	  <glossdef>
+		  <para>暂时姿态程序用一套非常有限的控件，展现单一的功能，在需要的时候调用，出现并完成自身的工作，接着迅速地消失，让用户继续正常的工作——通常是一个独占式程序。</para> 
+		  <para>暂时姿态下的应用不会长时间停留在屏幕上，用户不会有机会非常熟悉它们，所以用户界面应该显而易见，清晰而显眼地呈现控件，不能有引起混淆或错误的可能。界面必须清楚地说明它在干什么。</para>
+		  <para>虽然暂时式应用程序可以在你的桌面上单独运行，但它通常对独占式应用程序起着辅助支持作用。因为暂时式应用程序借用了独占式程序的空间，所以它必须考虑独占式程序，除了必要的空间以外，不能占用其他屏幕空间。</para>
+		  <glossseealso otherterm="posture"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="daemonic">
+	  <glossterm>守护姿态</glossterm>
+	  <glossdef>
+		  <para>通常不与用户交互的程序姿态。也叫<quote>后台姿态</quote>。</para>
+		  <para>用户和守护式应用程序之间的交互在本质上是暂时的，所有暂时式应用程序的设计规则对守护式应用程序也成立。暂时式设计<quote>告知用户程序的意图以及用户可用的选择的范围和含义</quote>的设计原则更加重要。在这一姿态下，不要不必要地中断用户。当守护程序发生问题，阻止了用户完成目标时，要为它提供直接的、内嵌的访问方式。</para>
+		  <glossseealso otherterm="posture"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="dataelement">
+	  <glossterm>数据元素</glossterm>
+	  <glossdef>
+		  <para>数据元素是在界面中显示给用户的数据的表达。是在需求定义阶段识别的数据需求的具体表现。在需求定义阶段，元素是以“用户－界面”这种表达的语言描述的，这些元素必须每一个都被定义为响应先前定义的具体需求。这样我们确保我们设计的产品的每一个方面都有一个清晰的用途，这个用途可以追溯到一个使用场景（scenario）或商业目标。</para>
+		  <para>数据元素一般是交互产品的基本主体。这些对象，诸如照片、电子邮件消息、客户记录，或者定单，都是被使用产品的人们查阅、响应，和操纵的基本单元，理想情况下应该符合人物角色的心智模型。要关注对象的重要属性（例如，电子邮件的发送者或者照片的拍照日期），但在定义交互框架的阶段，全面包容这些属性并不重要，只需对人物角色关心一些属性还是很多属性有个概念。 </para>
+		  <glossseealso otherterm="functionelement"/>
+	  </glossdef>
+  </glossentry>
+
+  <glossentry xml:id="functionelement">
+	  <glossterm>功能元素</glossterm>
+	  <glossdef>
+		  <para>功能元素是在界面中显示给用户的功能的表达。是在需求定义阶段识别的功能需求的具体表现。在需求定义阶段，元素是以“用户－界面”这种表达的语言描述的，这些元素必须每一个都被定义为响应先前定义的具体需求。这样我们确保我们设计的产品的每一个方面都有一个清晰的用途，这个用途可以追溯到一个使用场景（scenario）或商业目标。</para>
+		  <para>功能元素是可以施加在数据元素和它们在界面上的代表的操作。一般来说，它们包括对数据元素进行操作的工具和放置数据元素的空间。</para>
+		  <glossseealso otherterm="dataelement"/>
+	  </glossdef>
+  </glossentry>
+</glossary>
