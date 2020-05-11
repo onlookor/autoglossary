@@ -36,13 +36,14 @@ endtry
 if empty(b:changelist)==1
 	finish
 else
-	let b:changedlinenrlist=map(b:changelist[0],'v:val["lnum"]')
+	"b:linenums acts as a list of changed line numbers.
+	let b:linenums=map(b:changelist[0],'v:val["lnum"]')
 endif
 
-cal uniq(sort(b:changedlinenrlist,'n'))
+cal uniq(sort(b:linenums,'n'))
 
-"let b:changedlines=map(b:changedlinenrlist,'getline(v:val)')
-let b:changedlines=map(b:changedlinenrlist,'[v:val,getline(v:val)]')
+"let b:changedlines=map(b:linenums,'getline(v:val)')
+let b:changedlines=map(copy(b:linenums),'[v:val,getline(v:val)]')
 
 for b:item in b:changedlines
 	let b:linenumber=b:item[0]

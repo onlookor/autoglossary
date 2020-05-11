@@ -1358,7 +1358,7 @@
 <para>食谱</para>测试尾接父元素头不接，本例不应匹配</listitem>
 <para>测试尾接父元素头不接，不配对标签食谱</tara1>
 <para width='20'>测试尾接头不接带属性父元素食谱</para>
-<para>食谱</para>本例不应匹配
+<para><glossterm>食谱</glossterm></para>本例不应匹配
 <para>测试食谱</para>
 <para>测试食谱测试</para>
 <para>该用例描述了<b>用户</b>食谱如何删除一道。</para>
